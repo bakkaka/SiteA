@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>{% block title %}Welcome to the SpaceBar{% endblock %}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% block stylesheets %}
+            {#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">#}
+			
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+			<link rel="stylesheet" href="{{ asset('css/general.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+			 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-bg mb-5">
+            <a style="margin-left: 75px;" class="navbar-brand space-brand" href="{{ path('homepage') }}">The Space Bar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                       <a style="color: #fff;" class="nav-link" href="#">Local Asteroids</a>
+                     </li>
+                   
+					 <li class="nav-item">
+                       <a style="color: #fff;" class="nav-link" href="{{path('homepage')}}">Shoppify</a>
+                     </li>
+					  <li class="nav-item">
+                       <a style="color: #fff;" class="nav-link" href="{{path('blog')}}">Blog</a>
+                     </li>
+                   </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown" style="margin-right: 75px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						   {#{% if app.user%}
+                  <img class="nav-profile-img rounded-circle" src="{{asset(app.user.author.image.webPath)}}">
+				  {% else%}
+				  <p>Pas de photo</p>
+				           {% endif %}#}
+                </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="{{ path('admin_article_new')}}">Create Post</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+							 {#<span class="float-right">
+                <a href="{{path('cart')}}">Your cart ({{ app.session.get('cart_data')['total_amount'] ?? 00 }})</a>
+            </span>#}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+		<hr>
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+		<ul class="list-unstyled pull-right">
+		
+			 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                
+      {{ app.user.username }} 
+	  <a href="{{ path('app_logout') }}">Logout</a>
+	  {#{% if app.user.image is not null %}<img class="img-circle"
+  src="{{ asset(app.user.image.webPath) }}" 
+  alt="{{ app.user.image.alt }}" width="40px" height="40px" />
+ 
+  {% endif %}#}
+            {% else %}
+                <a href="{{ path('app_login') }}">login</a>
+				
+				
+				
+
+<a href="{{ path ('app_register') }}">Register</a>
+
+            {% endif %}
+
+
+
+
+
+</ul>
+		<hr>
+        {% block body %}{% endblock %}
+        <footer class="footer">
+            <div class="container text-center">
+                <span class="text-muted">Made with <i class="fa fa-heart" style="color: red;"></i> by the guys and gals at <a href="https://knpuniversity.com">KnpUniversity</a></span>
+            </div>
+        </footer>
+        {% block javascripts %}
+           
+            
+			  <script src="{{ asset('js/jquery-3.4.0.min.js') }}"></script>
+			  <script src="{{ asset('js/popper.min.js') }}"></script>
+			  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('js/article_show.js') }}"></script>
+            <script>
+                $('.dropdown-toggle').dropdown();
+            </script>
+        {% endblock %}
+    </body>
+</html>

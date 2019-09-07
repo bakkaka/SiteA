@@ -1,0 +1,41 @@
+
+{% extends 'base.html.twig' %}
+{% block title %}Register!{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h1>Register</h1>
+                {#<form method="POST" action="{{ path('app_register') }}" enctype="multipart/form-data">#}
+
+                {#{{ form_start(registrationForm, {'attr': {'class': 'form-horizontal', 'novalidate' : 'novalidate'}}) }}#}
+
+
+                {{ form_start(registrationForm) }}
+                    {{ form_row(registrationForm.username) }}
+                    {{ form_row(registrationForm.plainPassword) }}
+					 {{ form_row(registrationForm.email) }}
+                    <div class="checkbox mb-3">
+                        <label>
+                            {{ form_row(registrationForm.agreeTerms) }}
+                        </label>
+                    </div>
+
+                    {{ form_end(registrationForm) }}
+
+
+            </div>
+			</div>
+			</div>
+            <div class="col-sm-4 aside-register">
+                <h3>
+                    une autre div ici
+                </h3>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+<ul class="nav nav-pills nav-stacked">
+
+  {% for article in articles %}
+
+    <li>
+
+      <a href="{{ path('home_show', {'id': article.id}) }}">
+
+        {{ article.title }}
+
+      </a>
+
+    </li>
+
+  {% endfor %}
+
+</ul>

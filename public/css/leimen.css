@@ -1,0 +1,239 @@
+/*La connexion */
+a.dropdown-toggle {
+ position: absolute;
+ margin-bottom: 40px;
+ }
+/* La classe Well */
+.thumbnail.col-sm-1.col-xs-1, .thumbnail.col-sm-2 {
+ float: left;
+ }
+.media:hover {
+ }
+
+p,.thumbnail.col-sm-1.col-xs-1, .thumbnail.col-sm-2 {
+vertical-align: middle;
+ }
+
+ .list-unstyled p{
+ padding: 20px;
+ margin-left: 50px;
+ }
+ .titre {
+
+ }
+
+/* Sous-titres category et ville */
+h2.red {
+ color: red;
+}
+h2.blue {
+ color:blue;
+ }
+
+input[type="text"]
+  { 
+  line-height: 30px;
+  }
+/* Les categories */
+.category h2, .local h2 {
+ text-align: center;
+ color: fuchsia;
+ }
+ /* Les titres des annonces "Villes et categories */
+ h2.red {
+  color: red;
+  text-align: center;
+  }
+h2.blue {
+ color: blue;
+ text-align: center;
+ }
+ .center h2 {
+ color: blue;
+ }
+ .category.list-unstyled, .local.list-unstyled {
+  text-align: center;
+ }
+ /* titre de l'auteur dans category => show */
+ em.green.show {
+  margin-top: 20px;
+  color: fuchsia;
+  }
+ /* L'annonce */
+ 
+ .annonce h2 {
+  color: fuchsia;
+  }
+ .comments .well {
+  background: #CFF;
+  }
+div.well.comment {
+ background: Ivory;
+}
+/* Menu à gauche */
+.well.col-xs-2.col-sm-3 {
+ 
+ text-align: center;
+ }
+aside.col-xs-2.col-sm-2 {
+ /*margin-top: 200px;*/
+ text-align: center;
+ }
+.carousel-caption h2 {
+  color: red;
+}
+/* La page show Job */
+#job h2 {
+ display: inline-block;
+ vertical-align: top;
+ }
+ .type {
+  color: fuchsia;
+ }
+ .panel-title h2,h3 ,h4{
+  display: inline-block;
+}
+.panel-title h2,h3 {
+   color: red;
+   vertical-align: top;
+   }
+/* Les boutons */
+/* Le style du blog */
+a.btn.btn-primary.pull-right, a.btn.btn-success.pull-right {
+ margin-right: 5px;
+ }
+.titre {
+ font-size: 1.8em;
+ margin-bottom: 10px;
+ color: white;
+ }
+i.auteur.pull-right {
+color: fuchsia;
+margin-bottom: 100px;
+ }
+header.entete {
+ border-radius: 10px; 
+ background:lightskyblue;
+ padding-left: 10px;
+ padding-right: 10px;
+ }
+header i.pull-right {
+ margin-top: 20px;
+ }
+div.well {
+margin-bottom: 5px;
+}
+div#jobs {
+border-radius: 10px;
+padding: 10px;
+ }
+div#jobs:hover {
+ 
+ background: #f5f5f5;
+}
+div#job:hover {
+ 
+ background: #f5f5f5;
+ }
+#job, #jobs, #annonce, #annonce {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px:
+  }
+div#job {
+  min-height: 200px;
+  
+ }
+div#job p {
+   margin-left: 120px;
+  }
+ div.well p {
+   margin-left: 60px;
+  }
+#annonce:hover {
+ background: #f5f5f5;
+ }
+#annonces:hover {
+  background: #f5f5f5
+ }
+
+ /* bouton categorie */
+div.categorie.pull-right  {
+display: inline-block;
+width: 80px;
+height: 20px;
+ background: green;
+ text-align: center;
+ color: white;
+ display: none;
+ border-radius: 5px;
+ /*display: none;*/
+margin-top: 0px;
+ }
+ div.col-sm-9 h2 {
+  text-align: center;
+  }
+ /* Fin categorie */
+ 
+ 
+ /* Page d'accuiel du blog */
+ ul.well.col-sm-5.list-unstyled {
+  margin-left: 40px;
+  min-height: 250px;
+ }
+/* Page d'emploi */
+/*index */
+i.nomsoc {
+ color: red;
+ font-size: 1.8em;
+ margin-left: 80px;
+ }
+ /* Table */
+ table {
+  width: 100%;
+  }
+table tr {
+
+ height:80px;
+ border-radius: 5px;
+ }
+table td , p{
+ 
+ padding-left: 10px;
+ }
+tr:hover {
+ background: #f5f5f5;
+ }
+.thumbnail img {
+  float: left;
+ }
+.menu.well.list-unstyled li {
+  display: inline-block;
+  margin-left: 5px;
+ }
+.media:hover {
+ background: #f5f5f5;
+ }
+/* Auteur */
+.auteur {
+	text-align: center;
+}
+.img-responsive {
+	float: left;
+}
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: #F5F5F5;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    font-size: 0.9em;
+	margin-left: 15px;
+}
+ 
+ 
+ 
+ 

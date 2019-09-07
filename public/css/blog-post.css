@@ -1,0 +1,124 @@
+
+.menu.list-unsyled {
+ text-align: center;
+}
+div.menu.col-sm-4 {
+	float: right;
+	text-align: inline;
+}
+footer.py-5 {
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+.main.container {
+  min-height: 300px;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+h2.mt-4 a:hover {
+ color: orange;
+}
+h3.title1
+{
+ color: orange;
+}
+/* Login view */
+ul.login.list-unstyled.float-right{
+	margin-bottom: 20px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+	margin-bottom: 40px;
+}
+.well.login {
+color: white;
+ margin-top: 40px;
+ background: grey;
+ border: 2px dashed yellow;
+ padding-top: 25px;
+ padding-left: 25px;
+ padding-bottom: 25px;
+ margin-bottom: 40px;
+ 
+}
+p.login {
+ color: HotPink;
+}
+strong {
+ font-size: normal;
+ font-weight: normal;
+}
+div.view {
+ border-bottom: 1px solid red;
+}
+ul.list-unstyled.well {
+ text-align: center;
+}
+/* Mark */
+p.mark {
+min-height: 100px;
+background: black;
+color: white;
+padding: 15px;
+border-radius: 10px;
+}
+/*Fin Mark */
+/* Debut lien Interne */
+p.info {
+min-height: 100px;
+background: lightskyblue;
+color: black;
+padding: 15px;
+border: 1px solid green;
+border-radius: 10px;
+}
+span.code {
+	background: #eff5f5;
+	font-weight: bold;
+	border-radius: 4px;
+	padding: 5px;
+}
+li.liena {
+	
+	padding: 6px;
+	color: black;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: center;
+	float: left;
+	margin-bottom: 10px;
+}
+li.liena:hover {
+	
+	background: #eff5f5;
+	color: white;
+	border-radius: 5px;
+	
+}
+li.lienb {
+	
+	padding: 6px;
+	color: black;
+	border-radius: 5px;
+	text-align: center;
+	float: right;
+	border: 1px solid grey;
+}
+li.lienb:hover {
+
+	background: #eff5f5;
+	color: white;
+	
+
+}
+	
+
+.footer {
+ background: grey;
+ color: black;
+ margin-top: 15px;
+ padding: 25px;
+}
+.footer ul.list-unstyled a {
+color: white;
+}

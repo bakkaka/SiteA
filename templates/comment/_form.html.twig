@@ -1,0 +1,15 @@
+{{form_start(form)}}
+<div class="row">
+<div class="col-sm-4">{{form_row(form.author)}}</div>
+
+</div>
+<div class="row">
+
+<div class="col-sm-4">{{form_row(form.content)}}</div>
+</div>
+
+
+
+{{ form_rest(form) }}
+
+     {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}

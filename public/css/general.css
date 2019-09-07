@@ -1,0 +1,41 @@
+.navbar.navbar-inverse.navbar-fixed-top {
+	margin-top:50px
+	
+}
+
+.container {
+	background: #ffffff;
+	
+}
+.custom-file-input {
+    opacity: 4;
+}
+footer.footer.footer-styling {
+margin-top: 100px;
+}
+p.share-icons i {
+    font-size: 1.8em;
+	margin-left: 5px;
+	margin-top: 15px;
+}
+p.share-icons {
+ margin-left: 70px;
+}
+div.card-body {
+ width: 300px;
+ height: 300px;
+ border: 1px solid blue;
+ margin-top: 10px;
+ padding: 10px;
+}
+/*
+img {
+width: 100%;
+}
+*/
+footer.footer {
+margin-top: 100px
+}
+.container {
+background: #ffffff;
+}
